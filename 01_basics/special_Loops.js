@@ -159,7 +159,7 @@ const books = [
 // console.log(myBooks)
 // maps:
 
-const nums=[1,2,3,4,5,6,7,8,9]
+// const nums=[1,2,3,4,5,6,7,8,9]
 // const mynums=nums.map((item)=>item *10)
 // console.log(mynums)
 
@@ -171,3 +171,33 @@ const nums=[1,2,3,4,5,6,7,8,9]
 // .filter((item)=> item >33)
 // console.log(mynums)
 
+// map 
+// const num =[1,2,3]
+// const total = num.reduce((acc,currval)=> (acc+currval),0)
+// console.log(total)
+
+// const giftcart = [
+//   {
+//     item1: "gold chain",
+//     price: 2000
+//   },
+//   {
+//     item2: "silver ring",
+//     price: 1500
+//   },
+//   {
+//     item3: "diamond earrings",
+//     price: 5000
+//   },
+//   {
+//     item4: "bracelet",
+//     price: 1200
+//   },
+//   {
+//     item5: "watch",
+//     price: 2500
+//   }
+// ];
+
+// const total = giftcart.reduce((acc,currval)=> (acc+currval.price),0)
+// console.log(total)
