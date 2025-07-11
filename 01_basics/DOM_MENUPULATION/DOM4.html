@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM MENUPULATION</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>javascropt</li>
+        <li>golang</li>
+        <li>cpp</li>
+    </ul>
+    <script>
+         //Edit
+        // function addLang(LangName){
+        //     const Li = document.createElement('li')
+        //     Li.innerHTML=`${LangName}`
+        //     document.querySelector('.language').
+        //     appendChild(Li)
+            
+        // }
+        // addLang("cpp")
+        // addLang("python")
+
+        //Edit
+        // function addLanguage(LangName){
+        //    const Li = document.createElement('li')
+        //    Li.appendChild(document.createTextNode(LangName))
+        //     document.querySelector('.language').appendChild(Li)
+        // }
+        // addLanguage("cpp")
+
+    //replace
+    //  const secondLi = document.querySelector("li:nth-child(2)");
+    // // console.log(secondLi);
+    // const Li=document.createElement('li')
+    // Li.appendChild(document.createTextNode('python')  )  
+    // secondLi.replaceWith(Li)
+
+    // const firstChild = document.querySelector("li:first-child")
+    // console.log(firstChild)
+    // // firstChild.remove()
+    // firstChild.outerHTML="<li>cpp</li>"
+
+    //  const firstChild = document.querySelector(".language").firstElementChild
+    //  const firstChild = document.querySelector("li").nextElementSibling
+    //  const firstChild = document.querySelector("li:first-child")
+    //  const firstChild = document.querySelector("li:nth-child(2)");
+     const firstChild = document.querySelector("li:nth-child(2)");
+    console.log(firstChild)   
+
+    </script>
+    
+</body>
+</html>
