@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GitHub Profile Viewer</title>
+</head>
+<body style="background-color: #212121; color: white;">
+  <div id="profile">profile</div>
+  <button id="show">Show</button>
+
+  <script>
+    const requestUrl = 'https://api.github.com/users/torvalds'; // changed here
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', requestUrl);
+
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4) {
+        const data = JSON.parse(this.responseText);
+        console.log(typeof data);
+        console.log(data.followers);
+
+        document.getElementById('show').addEventListener('click', function () {
+          const img = document.createElement('img');
+          img.src = data.avatar_url;
+          img.style.height = '150px';
+          document.querySelector('#profile').appendChild(img);
+        });
+      }
+    };
+
+    xhr.send();
+  </script>
+</body>
+</html>
